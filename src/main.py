@@ -1,35 +1,31 @@
 from service import crear_registro, listar_registros
-from colorama import init, Fore, Style
-
-init(autoreset=True)
 
 def main():
-    print(Fore.CYAN + "=== SISTEMA DE REGISTROS ===")
+    print("Sistema con persistencia\n")
 
     while True:
-        print(Fore.BLUE + "\n1. Crear registro")
-        print(Fore.YELLOW + "\n2. Listar registros")
-        print(Fore.RED + "\n3. Salir")
+        print("\n1. Crear registro")
+        print("2. Listar registros")
+        print("3. Salir")
 
-        opcion = input(Fore.GREEN + "Seleccione una opción: ")
+        opcion = input("Seleccione una opción: ")
 
         if opcion == "1":
-            id = input("Ingrese ID: ")
-            nombre = input("Ingrese nombre: ")
-            correo = input("Ingrese correo: ")
+            id = input("ID: ")
+            nombre = input("Nombre: ")
+            correo = input("Correo: ")
 
             crear_registro(id, nombre, correo)
 
         elif opcion == "2":
-            print(Fore.BLUE + "\n--- LISTA DE REGISTROS ---")
             listar_registros()
 
         elif opcion == "3":
-            print(Fore.RED + "Saliendo del sistema...")
             break
 
         else:
-            print(Fore.RED + "Opción inválida")
+            print("Opción inválida")
+
 
 if __name__ == "__main__":
     main()
