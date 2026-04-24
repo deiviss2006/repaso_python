@@ -15,8 +15,13 @@ def validar_nombre(nombre):
     return nombre.strip()
 
 
-def validar_correo(correo):
+def validar_correo(correo, correos_existentes=None):
+    correo = correo.strip()
+
     if "@" not in correo or "." not in correo:
         raise ValueError("Correo inválido")
-    
-    return correo.strip()
+
+    if correos_existentes and correo in correos_existentes:
+        raise ValueError("El correo ya existe")
+
+    return correo
