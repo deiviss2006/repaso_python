@@ -1,22 +1,7 @@
 [
     {
         "id": 1,
-        "nombre": "samuel",
-        "correo": "deivis@gmail.com"
-    },
-    {
-        "id": 2,
-        "nombre": "deivis",
-        "correo": "deivis@gmail.com"
-    },
-    {
-        "id": 3,
-        "nombre": "santa",
-        "correo": "deivis@gmail.com"
-    },
-    {
-        "id": 4,
-        "nombre": "manuel",
-        "correo": "deivis@gmail.com"
+        "nombre": "Juan",
+        "correo": "juan@gmail.com"
     }
 ]
